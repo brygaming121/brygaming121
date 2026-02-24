@@ -1,3 +1,164 @@
+Skip to content
+New chat
+Agents
+Spaces
+Spark
+Preview
+brygaming121
+Copilot Free
+
+Add images to projects section
+Copilot Chat
+Add images to projects section
+You said: how to add picture in github to
+how to add picture in github to add in my website
+Copilot said: I'd be happy to help you add
+I'd be happy to help you add pictures to GitHub that you can use on your website!
+
+Here are the main approaches:
+
+1. Upload Images to Your Repository
+The simplest method is to commit image files directly to your GitHub repository:
+
+Navigate to your repository on GitHub
+Click Add file → Upload files
+Select your image files (JPG, PNG, GIF, SVG, etc.)
+Add a commit message and click Commit changes
+2. Reference Images in Your Website
+Once uploaded, you can reference them in your code using their raw GitHub URL:
+
+example.html
+<!-- Using the raw GitHub URL -->
+<img src="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/images/photo.jpg" alt="Description">
+
+Replace:
+
+YOUR_USERNAME - your GitHub username
+YOUR_REPO - your repository name
+main - your branch name (could be master, etc.)
+images/photo.jpg - your image path and filename
+3. Get the Direct Image URL
+Go to your image file in GitHub
+Click the Raw button
+Copy the URL from the address bar
+Use that URL in your <img> tag or CSS
+4. Using GitHub Pages (Recommended for Websites)
+If you're hosting a website on GitHub Pages:
+
+Create a folder like assets/images/ in your repository
+Upload images there
+Reference them as: ./assets/images/photo.jpg or /assets/images/photo.jpg
+5. Best Practices
+Keep images in an organized folder structure (e.g., /images/, /assets/)
+Use descriptive filenames
+Optimize image file sizes for web performance
+Use common formats: JPG, PNG, WebP, or GIF
+Would you like help with a specific approach or need guidance on how to embed these images in a particular format (HTML, Markdown, CSS)?
+
+You said: explain 2
+explain 2
+Copilot said: # **Reference Images in Your Website -
+Reference Images in Your Website - Detailed Explanation
+Let me break down approach #2 step by step:
+
+Understanding the Raw GitHub URL Structure
+When you upload an image to GitHub, you get a URL that points to it. To use it on your website, you need the raw version of that URL.
+
+URL Format:
+Code
+https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/BRANCH_NAME/PATH_TO_IMAGE/filename.jpg
+Let's break down each part:
+
+Part	Example	Meaning
+YOUR_USERNAME	brygaming121	Your GitHub username
+YOUR_REPO	my-website	Your repository name
+BRANCH_NAME	main	The branch where your image is stored (usually main or master)
+PATH_TO_IMAGE	images/photos	Folder structure in your repo
+filename.jpg	profile.jpg	The actual image file name
+Complete Example:
+Code
+https://raw.githubusercontent.com/brygaming121/my-website/main/images/profile.jpg
+How to Use It in HTML
+Once you have the raw URL, use it in an <img> tag:
+
+index.html
+v1
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Website</title>
+</head>
+<body>
+Step-by-Step Process
+Step 1: Upload Image to GitHub
+Go to your repository
+Click Add file → Upload files
+Upload your image (e.g., profile.jpg to an images/ folder)
+Commit the changes
+Step 2: Navigate to Your Image
+Go to your repository
+Click on the image file
+You'll see the image displayed in GitHub
+Step 3: Get the Raw URL
+Click the Raw button in the top-right corner
+The URL in your browser address bar is your raw URL
+Copy it (Ctrl+C or Cmd+C)
+Step 4: Use in Your Website
+Paste the URL into your HTML <img> tag
+Or use it in CSS as a background image
+Different Ways to Use the URL
+In HTML:
+example1.html
+<img src="https://raw.githubusercontent.com/brygaming121/my-website/main/images/photo.jpg" 
+     alt="My Photo">
+
+In Markdown:
+README.md
+![My Photo](https://raw.githubusercontent.com/brygaming121/my-website/main/images/photo.jpg)
+
+In CSS (as background image):
+style.css
+.header {
+    background-image: url('https://raw.githubusercontent.com/brygaming121/my-website/main/images/banner.jpg');
+    background-size: cover;
+    height: 300px;
+}
+
+In JavaScript:
+script.js
+const imageUrl = "https://raw.githubusercontent.com/brygaming121/my-website/main/images/photo.jpg";
+document.getElementById("myImage").src = imageUrl;
+
+Important Tips
+✅ Do's:
+
+Always use the raw URL (includes raw.githubusercontent.com)
+Test the URL in your browser first to make sure it works
+Use descriptive file names
+❌ Don'ts:
+
+Don't use the regular GitHub URL (without "raw") - it won't work properly
+Don't upload extremely large files (optimize images first)
+Don't store sensitive images in public repositories
+Quick Reference Example
+If your GitHub username is brygaming121 and you have:
+
+Repository: portfolio
+Branch: main
+Image location: assets/images/logo.png
+Your raw URL would be:
+
+Code
+https://raw.githubusercontent.com/brygaming121/portfolio/main/assets/images/logo.png
+And you'd use it like:
+
+HTML
+<img src="https://raw.githubusercontent.com/brygaming121/portfolio/main/assets/images/logo.png" 
+     alt="My Logo">
+Does this help clarify how to reference images from GitHub on your website? Let me know if you need help with anything specific!
+
+You said: <!DOCTYPE html> <html lang="en"> <head> <meta
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -192,3 +353,263 @@
 
 </body>
 </html>
+Copilot said: Great portfolio website! I can help you
+Great portfolio website! I can help you add a profile picture to it. Here's how to modify your HTML to include an image from GitHub:
+
+Option 1: Add Profile Picture in Hero Section
+Here's your updated HTML with a profile picture added:
+
+index.html
+v2
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bryan | Computer Engineer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+What I Added:
+Profile Picture HTML in the hero section:
+
+HTML
+<img src="https://raw.githubusercontent.com/brygaming121/YOUR_REPO/main/images/profile.jpg" 
+     alt="Bryan Profile Picture" 
+     class="profile-pic">
+CSS Styling for the profile picture:
+
+Circular shape with border-radius: 50%
+Blue border matching your theme
+Glowing shadow effect
+Responsive sizing for mobile
+Steps to Use:
+Upload your profile picture to GitHub:
+
+Go to your repository
+Click Add file → Upload files
+Create a folder called images and upload your picture (e.g., profile.jpg)
+Commit the changes
+Update the image URL:
+
+Replace YOUR_REPO with your actual repository name
+Replace profile.jpg with your actual filename
+Example: https://raw.githubusercontent.com/brygaming121/portfolio/main/images/profile.jpg
+Test it:
+
+Copy the raw URL into your browser to make sure it works
+Then paste it into the src attribute
+The image will now appear as a beautiful circular profile picture in your hero section with a glowing blue border that matches your design! 🎨
+
+You said: that is my code where to put
+that is my code where to put image in project section
+Copilot said: Great! Here's how to add images to
+Great! Here's how to add images to your Projects section. I'll show you the updated code:
+
+index.html
+v3
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bryan | Computer Engineer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+Key Changes Made:
+1. New CSS Styling for Projects:
+.projects-container - Grid layout that displays projects side-by-side
+.project-card - Card styling with hover effects
+.project-image - Image styling (200px height, covers the full width)
+Hover effects: cards lift up and show a blue border
+2. Updated Projects HTML:
+Each project now has its own card with an image
+Image is placed at the top
+Title and description below the image
+Responsive grid (2 columns on desktop, 1 on mobile)
+Steps to Add Images:
+Upload your project images to GitHub:
+
+Code
+Repository → Add file → Upload files
+Create/use "images" folder
+Upload: automation1.jpg, reporting.jpg
+Update the image URLs:
+
+HTML
+Replace: https://raw.githubusercontent.com/brygaming121/YOUR_REPO/main/images/
+
+Example: https://raw.githubusercontent.com/brygaming121/portfolio/main/images/automation1.jpg
+Test the URLs:
+
+Paste the raw GitHub URL in your browser to verify it works
+Then use it in your HTML
+Result:
+Beautiful project cards with images
+Hover effect (cards lift up with blue border)
+Responsive layout (stacks on mobile)
+Professional look matching your portfolio theme! 🎨
+Ask anything
+Workbench
+
+example.html
+
+index.html
+Press Delete to close.
+
+
+
+260 lines · 7 KB
+
+index.html file contents
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219
+220
+221
+222
+223
+224
+225
+226
+227
+228
+229
+230
+231
+232
+233
+234
+235
+236
+237
+238
+239
+240
+241
+242
+243
+244
+245
+246
+247
+248
+249
+250
+251
+252
+253
+254
+255
+256
+257
+258
+259
+260
+<!DOCTYPE html>
+            efficient workflow systems and intelligent automation solutions.
+        </p>
+    </div>
+</section>
+
+<section id="experience">
+    <h2>Professional Experience</h2>
+    <div class="card">
+        <h3>Failure Analysis Engineer</h3>
+        <p><strong>Experience:</strong> 3 Years</p>
+        <ul>
+            <li>Conducted root cause analysis on hardware/system failures</li>
+            <li>Improved reliability and reduced recurring defects</li>
+            <li>Collaborated with cross-functional engineering teams</li>
+            <li>Documented technical findings and corrective actions</li>
+        </ul>
+    </div>
+</section>
+
+<section id="skills">
+    <h2>Technical Skills</h2>
+    <div class="card">
+        <ul>
+            <li>Root Cause Analysis (RCA)</li>
+            <li>Failure Analysis & Debugging</li>
+            <li>Technical Documentation</li>
+            <li>Process Improvement</li>
+            <li>Basic AI Automation</li>
+            <li>n8n Workflow Automation</li>
+            <li>HTML & CSS</li>
+            <li>Git & GitHub</li>
+        </ul>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>Automation Projects</h2>
+    <div class="projects-container">
+        <!-- Project 1 -->
+        <div class="project-card">
+            <img src="https://raw.githubusercontent.com/brygaming121/YOUR_REPO/main/images/automation1.jpg" 
+                 alt="AI Workflow Automation" 
+                 class="project-image">
+            <div class="project-content">
+                <h3>AI Workflow Automation</h3>
+                <p>Built automated workflows using n8n to streamline repetitive business processes.</p>
+            </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+            <img src="https://raw.githubusercontent.com/brygaming121/YOUR_REPO/main/images/reporting.jpg" 
+                 alt="Failure Reporting System" 
+                 class="project-image">
+            <div class="project-content">
+                <h3>Failure Reporting System</h3>
+                <p>Designed structured documentation and analysis tracking for recurring failure patterns.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <div class="card">
+        <p>Email: your.email@example.com</p>
+        <p>GitHub: https://github.com/brygaming121</p>
+        <p>Location: Philippines</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Bryan | Computer Engineer</p>
+</footer>
+
+</body>
+</html>
+Use Control + Shift + m to toggle the tab key moving focus. Alternatively, use esc then tab to move to the next interactive element on the page.
