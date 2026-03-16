@@ -6,19 +6,17 @@
 
 ### 🤖 What I Build
 
-- **Voice AI Agents** — Real phone-call-handling AI using Vapi + GPT-4o, fully integrated with Google Calendar, Gmail, and Sheets
+- **Voice AI Agents** — Real phone-call-handling AI using Retell AI + n8n, fully integrated with Google Calendar, Gmail, and Sheets
 - **Automation Workflows** — Multi-step n8n pipelines running 24/7 on Railway (reminders, follow-ups, daily reports, call logging)
-- **API Integrations** — Google Calendar, Gmail, Sheets, OpenAI, Whisper — end-to-end without any manual work
+- **API Integrations** — Google Calendar, Gmail, Sheets, Retell AI, Supabase — end-to-end without any manual work
 
 ---
 
-### 🚀 Featured Project — Aria Voice Receptionist
+### 🚀 Featured Project — Ace Retell AI (World of Sports Fun)
 
-> An AI voice receptionist deployed for a real dental clinic. Handles bookings, cancellations, rescheduling, and reminders — fully automated.
+> An AI voice agent for an event venue. Handles inquiries, event bookings, lead capture, availability checks, and automated reminders — fully automated and live 24/7.
 
-**Stack:** Vapi · GPT-4o · n8n · Railway · Google Calendar · Gmail · Google Sheets · Python
-
-🌐 [Live Demo](https://brygaming121.github.io/aria-dental-website)
+**Stack:** Retell AI · n8n · Railway · Supabase · Google Calendar · Gmail · Google Sheets · Python
 
 ---
 
