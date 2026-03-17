@@ -1583,23 +1583,26 @@
         </div>
 
         <!-- Lightbox overlay -->
-        <div id="lightbox" onclick="closeLightbox()" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.92);z-index:9999;align-items:center;justify-content:flex-start;flex-direction:column;padding:10px 20px 20px;overflow-y:auto;">
-          <div style="position:absolute;top:20px;right:28px;font-size:2rem;color:#fff;cursor:pointer;line-height:1;" onclick="closeLightbox()">&#x2715;</div>
-          <div id="lightbox-label" style="color:#f5a623;font-size:.85rem;font-weight:600;margin-bottom:14px;letter-spacing:.05em;"></div>
-          <img id="lightbox-img" src="" alt="" style="max-width:95vw;object-fit:contain;border-radius:10px;box-shadow:0 0 60px rgba(0,0,0,.8);" onclick="event.stopPropagation()">
-          <div style="color:#7a92b4;font-size:.75rem;margin-top:12px;">Click anywhere to close</div>
+        <div id="lightbox" onclick="closeLightbox()" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.93);z-index:9999;overflow-y:auto;">
+          <!-- fixed close button -->
+          <div onclick="closeLightbox()" style="position:fixed;top:16px;right:24px;width:36px;height:36px;background:rgba(255,255,255,.12);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.2rem;color:#fff;cursor:pointer;z-index:10000;">&#x2715;</div>
+          <!-- scrollable content wrapper — click on this bg closes, click on image does not -->
+          <div style="min-height:100%;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;padding:16px 16px 40px;" onclick="closeLightbox()">
+            <div id="lightbox-label" style="color:#f5a623;font-size:.85rem;font-weight:600;margin-bottom:12px;letter-spacing:.05em;"></div>
+            <img id="lightbox-img" src="" alt="" style="max-width:96vw;border-radius:10px;box-shadow:0 0 60px rgba(0,0,0,.8);display:block;" onclick="event.stopPropagation()">
+            <div style="color:#7a92b4;font-size:.75rem;margin-top:12px;">Click outside image or press Esc to close</div>
+          </div>
         </div>
         <script>
           function openLightbox(src, label) {
             var lb = document.getElementById('lightbox');
             document.getElementById('lightbox-img').src = src;
             document.getElementById('lightbox-label').innerText = label;
-            lb.style.display = 'flex';
-            document.body.style.overflow = 'hidden';
+            lb.style.display = 'block';
+            lb.scrollTop = 0;
           }
           function closeLightbox() {
             document.getElementById('lightbox').style.display = 'none';
-            document.body.style.overflow = '';
           }
           document.addEventListener('keydown', function(e){ if(e.key==='Escape') closeLightbox(); });
         </script>
