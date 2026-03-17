@@ -1583,10 +1583,10 @@
         </div>
 
         <!-- Lightbox overlay -->
-        <div id="lightbox" onclick="closeLightbox()" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.92);z-index:9999;align-items:center;justify-content:center;flex-direction:column;padding:20px;">
+        <div id="lightbox" onclick="closeLightbox()" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.92);z-index:9999;align-items:flex-start;justify-content:center;flex-direction:column;padding:60px 20px 20px;overflow-y:auto;">
           <div style="position:absolute;top:20px;right:28px;font-size:2rem;color:#fff;cursor:pointer;line-height:1;" onclick="closeLightbox()">&#x2715;</div>
           <div id="lightbox-label" style="color:#f5a623;font-size:.85rem;font-weight:600;margin-bottom:14px;letter-spacing:.05em;"></div>
-          <img id="lightbox-img" src="" alt="" style="max-width:95vw;max-height:88vh;object-fit:contain;border-radius:10px;box-shadow:0 0 60px rgba(0,0,0,.8);">
+          <img id="lightbox-img" src="" alt="" style="max-width:95vw;object-fit:contain;border-radius:10px;box-shadow:0 0 60px rgba(0,0,0,.8);" onclick="event.stopPropagation()">
           <div style="color:#7a92b4;font-size:.75rem;margin-top:12px;">Click anywhere to close</div>
         </div>
         <script>
