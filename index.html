@@ -1587,7 +1587,7 @@
           <!-- fixed close button -->
           <div onclick="closeLightbox()" style="position:fixed;top:16px;right:24px;width:36px;height:36px;background:rgba(255,255,255,.12);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.2rem;color:#fff;cursor:pointer;z-index:10000;">&#x2715;</div>
           <!-- scrollable content wrapper — click on this bg closes, click on image does not -->
-          <div style="min-height:100%;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;padding:16px 16px 40px;" onclick="closeLightbox()">
+          <div style="min-height:100%;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;padding:70px 16px 40px;" onclick="closeLightbox()">
             <div id="lightbox-label" style="color:#f5a623;font-size:.85rem;font-weight:600;margin-bottom:12px;letter-spacing:.05em;"></div>
             <img id="lightbox-img" src="" alt="" style="max-width:96vw;border-radius:10px;box-shadow:0 0 60px rgba(0,0,0,.8);display:block;" onclick="event.stopPropagation()">
             <div style="color:#7a92b4;font-size:.75rem;margin-top:12px;">Click outside image or press Esc to close</div>
@@ -1600,9 +1600,11 @@
             document.getElementById('lightbox-label').innerText = label;
             lb.style.display = 'block';
             lb.scrollTop = 0;
+            document.querySelector('nav').style.display = 'none';
           }
           function closeLightbox() {
             document.getElementById('lightbox').style.display = 'none';
+            document.querySelector('nav').style.display = '';
           }
           document.addEventListener('keydown', function(e){ if(e.key==='Escape') closeLightbox(); });
         </script>
