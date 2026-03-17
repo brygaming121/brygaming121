@@ -1595,17 +1595,10 @@
 
       <div class="project-main">
 
-        <div class="project-visual" style="background:#0a0f1e;padding:0;overflow:hidden;position:relative;min-height:420px;height:420px;">
-          <style>
-            @keyframes ace-fade-in  { 0%,45%{opacity:0.92} 50%,95%{opacity:0} 100%{opacity:0.92} }
-            @keyframes ace-fade-out { 0%,45%{opacity:0}    50%,95%{opacity:0.92} 100%{opacity:0} }
-            .ace-img1,.ace-img2 { position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:top center; }
-            .ace-img1 { animation:ace-fade-in  10s ease-in-out infinite; }
-            .ace-img2 { animation:ace-fade-out 10s ease-in-out infinite; }
-          </style>
-          <img class="ace-img1" src="ace-workflow.png" alt="Ace Voice Agent Workflow">
-          <img class="ace-img2" src="ace-workflows-all.png" alt="All 7 Ace Workflows">
-          <div style="position:absolute;bottom:12px;left:50%;transform:translateX(-50%);padding:5px 16px;background:rgba(10,15,30,.8);border:1px solid rgba(230,60,47,.4);border-radius:50px;font-size:.72rem;color:#f5a623;font-weight:600;white-space:nowrap;display:inline-flex;align-items:center;gap:6px;z-index:2;"><span style="width:7px;height:7px;border-radius:50%;background:#f5a623;box-shadow:0 0 6px #f5a623;display:inline-block;"></span> n8n Voice Agent Workflow</div>
+        <div class="project-visual" style="background:#0a0f1e;padding:0;overflow:hidden;position:relative;display:flex;flex-direction:column;">
+          <img src="ace-workflow.png" alt="Ace Voice Agent Workflow" style="width:100%;flex:1;object-fit:cover;object-position:top;display:block;opacity:0.92;">
+          <div style="height:1px;background:rgba(255,255,255,0.1);"></div>
+          <img src="ace-workflows-all.png" alt="All 7 Ace Workflows" style="width:100%;flex:1;object-fit:cover;object-position:top;display:block;opacity:0.92;">
         </div>
 
         <div class="project-body">
