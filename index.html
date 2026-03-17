@@ -1595,15 +1595,15 @@
 
       <div class="project-main">
 
-        <div class="project-visual" style="background:#0a0f1e;padding:0;overflow:hidden;position:relative;">
+        <div class="project-visual" style="background:#0a0f1e;padding:0;overflow:hidden;position:relative;min-height:420px;height:420px;">
           <style>
             @keyframes ace-slide {
-              0%,42%   { transform:translateX(0); }
-              50%,92%  { transform:translateX(-100%); }
-              100%     { transform:translateX(0); }
+              0%,40%  { transform:translateX(0); }
+              50%,90% { transform:translateX(-50%); }
+              100%    { transform:translateX(0); }
             }
-            .ace-slider { display:flex; width:200%; height:100%; animation:ace-slide 9s ease-in-out infinite; }
-            .ace-slider img { width:50%; height:100%; object-fit:cover; object-position:top; opacity:0.92; flex-shrink:0; }
+            .ace-slider { display:flex; width:200%; height:420px; animation:ace-slide 10s ease-in-out infinite; }
+            .ace-slider img { width:50%; height:420px; object-fit:cover; object-position:top center; opacity:0.92; flex-shrink:0; display:block; }
           </style>
           <div class="ace-slider">
             <img src="ace-workflow.png" alt="Ace Voice Agent Workflow">
