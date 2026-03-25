@@ -1,6 +1,6 @@
 # Hi there, I'm Bryan 👋
 
-**Computer Engineer · AI Automation Specialist · Failure Analysis Expert**
+**Computer Engineer · AI Integration Specialist · Failure Analysis Expert**
 
 ---
 
