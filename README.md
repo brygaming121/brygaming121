@@ -9,6 +9,7 @@
 - **Voice AI Agents** — Real phone-call-handling AI using Retell AI + n8n, fully integrated with Google Calendar, Gmail, and Sheets
 - **Automation Workflows** — Multi-step n8n pipelines running 24/7 on Railway (reminders, follow-ups, daily reports, call logging)
 - **API Integrations** — Google Calendar, Gmail, Sheets, Retell AI, Supabase — end-to-end without any manual work
+- **Copy Chief** — AI copywriter trained on a real expert's voice using RAG + Claude, producing on-brand copy across 40+ topics
 
 ---
 
