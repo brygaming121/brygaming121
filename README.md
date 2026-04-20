@@ -25,7 +25,7 @@
 
 ### 📝 Featured Project — Copy Chief (KlnBros)
 
-> An AI copywriter that writes in a real expert’s voice. Built by extracting 598 responses across 40 topics into a Supabase vector store, then using RAG + Claude to retrieve and match the expert’s style, tone, and depth. Currently at 81%+ voice match score and improving.
+> An AI copywriter that writes in a real expert’s voice. Built by extracting 598 responses across 40 topics into a Supabase vector store, then using RAG + Claude to retrieve and match the expert’s style, tone, and depth.
 
 **Stack:** Claude · Supabase (pgvector) · Python · RAG · n8n
 
