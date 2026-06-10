@@ -37,6 +37,8 @@
 
 **Highlights:** returning-caller recognition · GHL calendar integration · automatic lead recovery fallback · executive dashboard with weekly grid
 
+**Workflows:** 3 n8n workflows — main webhook orchestrator (6 routes, 30+ nodes), daily date-updater cron, and error-alerting workflow
+
 **Stack:** Retell AI · Node.js · Express · n8n · Railway · Supabase · GoHighLevel API · Google OAuth
 
 ---
