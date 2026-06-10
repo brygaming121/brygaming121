@@ -31,6 +31,26 @@
 
 ---
 
+### 📞 Featured Project — Grace AI Receptionist (King Land Buyers)
+
+> A 24/7 AI voice receptionist for a land-buying business. Grace answers inbound calls, qualifies sellers, captures lead data, books consultations on the team’s calendar, and auto-pushes leads into the CRM — even recovering leads from abrupt hangups via a fallback workflow.
+
+**Highlights:** returning-caller recognition · GHL calendar integration · automatic lead recovery fallback · executive dashboard with weekly grid
+
+**Stack:** Retell AI · Node.js · Express · n8n · Railway · Supabase · GoHighLevel API · Google OAuth
+
+---
+
+### 🔔 Featured Project — EMMA AI Outbound Caller (King Land Buyers)
+
+> A production AI outbound caller that contacts webinar registrants within minutes of sign-up to confirm attendance and capture their personal “why.” Designed to lift live-attendance rate from a 34.7% baseline toward 50%+.
+
+**Highlights:** TCPA-compliant (timezone-aware) · smart 2-attempt retry with voicemail detection · in-process scheduling · 100% uptime · 0 TCPA violations · admin dashboard with PDF executive reports
+
+**Stack:** Retell AI · Node.js · Express · Railway · Supabase · GoHighLevel API
+
+---
+
 ### 🛠 Tech Stack
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
