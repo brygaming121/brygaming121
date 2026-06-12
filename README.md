@@ -31,6 +31,14 @@
 
 ---
 
+### 🎨 Featured Project — Creative Lab (White-Label AI Ad & Carousel Generator)
+
+> A password-protected web app that generates 6-slide carousel posts and image ads end-to-end. Claude writes the copy in a Justin-Welsh/Hormozi style. gpt-image-2 generates the visuals — either as backgrounds with HTML text overlays, or as full AI-designed slides (text + photo in one image). Includes a caption generator, single-slide regenerate (wording / image / both), 7 image styles, 3 slide styles, brand kit memory (localStorage), and PDF export. Built to be resold as a white-label tool per client.
+
+**Stack:** FastAPI · Python · Claude Sonnet 4.6 · gpt-image-2 · Jinja2 · Alpine.js · Tailwind CSS · html2canvas + jsPDF · Railway
+
+---
+
 ### 📞 Featured Project — Grace AI Receptionist (King Land Buyers)
 
 > A 24/7 AI voice receptionist for a land-buying business. Grace answers inbound calls, qualifies sellers, captures lead data, books consultations on the team’s calendar, and auto-pushes leads into the CRM — even recovering leads from abrupt hangups via a fallback workflow.
