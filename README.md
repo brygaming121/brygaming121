@@ -51,6 +51,16 @@
 
 ---
 
+### 🎯 Featured Project — Sarah AI Pre-Qualify Agent (King Land Buyers)
+
+> An AI outbound caller that automatically dials every new land lead within 2 minutes of entering the “Qualify” pipeline stage. Sarah runs an 8-stage qualification conversation, scores the lead 0-100 with a deterministic rubric (motivation, price gap, timeline, ownership, title, condition, engagement), books a consultation on the closer’s calendar, and moves the contact to the correct pipeline destination — all without a human.
+
+**Highlights:** TCPA-compliant with full US state + area-code timezone mapping · speed-to-lead under 2 minutes · 26-field qualification writeback to CRM · Hot/Warm/Cool/Cold tier routing with same-day Discord alerts for hot leads · 5-day multi-channel follow-up cadence (voice + SMS) with stop-on-answer
+
+**Stack:** Retell AI · Node.js · Express · Railway · Supabase · n8n · GoHighLevel API · HMAC Webhooks
+
+---
+
 ### 🔔 Featured Project — EMMA AI Outbound Caller (King Land Buyers)
 
 > A production AI outbound caller that contacts webinar registrants within minutes of sign-up to confirm attendance and capture their personal “why.” Designed to lift live-attendance rate from a 34.7% baseline toward 50%+.
